@@ -10,7 +10,9 @@
         }
     ],
     "extra": {
-        "map": [
-        ]
+      "map": [
+        ["app/code/local/Agere/Service/", "app/code/local/Agere/Service/"],
+        ["app/etc/modules/Agere_Service.xml", "app/etc/modules/Agere_Service.xml"]
+      ]
     }
 }
