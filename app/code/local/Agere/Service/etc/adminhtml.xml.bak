@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+
+                                    <agere_service_write_sto translate="title" module="agere_service">
+                                        <title>Write STO</title>
+                                    </agere_service_write_sto>
+
+	                                <agere_service_test_drive translate="title" module="agere_service">
+		                                <title>Test drive</title>
+	                                </agere_service_test_drive>
+
+	                                <agere_service_rate_car translate="title" module="agere_service">
+		                                <title>Rate car</title>
+	                                </agere_service_rate_car>
+
+	                                <agere_service_call_me translate="title" module="agere_service">
+		                                <title>Call me</title>
+	                                </agere_service_call_me>
+
+	                                <agere_service_ask_question translate="title" module="agere_service">
+		                                <title>Ask question</title>
+	                                </agere_service_ask_question>
+
+	                                <agere_service_offer_commerce translate="title" module="agere_service">
+		                                <title>Offer Commerce</title>
+	                                </agere_service_offer_commerce>
+
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

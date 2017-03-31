@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Agere_Service>
+			<version>1.0.0</version>
+		</Agere_Service>
+	</modules>
+
+	<frontend>
+		<routers>
+			<agere_service>
+				<use>standard</use>
+				<args>
+					<module>Agere_Service</module>
+					<frontName>service</frontName>
+				</args>
+			</agere_service>
+		</routers>
+
+		<layout>
+			<updates>
+				<agere_service>
+					<file>agere/service.xml</file>
+				</agere_service>
+			</updates>
+		</layout>
+
+		<translate>
+			<modules>
+				<Agere_Service>
+					<files>
+						<default>Agere_Service.csv</default>
+					</files>
+				</Agere_Service>
+			</modules>
+		</translate>
+	</frontend>
+
+	<adminhtml>
+		<layout>
+			<updates>
+				<service>
+					<file>service.xml</file>
+				</service>
+			</updates>
+		</layout>
+	</adminhtml>
+
+	<global>
+		<models>
+			<agere_service>
+				<class>Agere_Service_Model</class>
+				<resourceModel>service_resource</resourceModel>
+			</agere_service>
+			<service_resource>
+				<class>Agere_Service_Model_Resource</class>
+				<entities>
+				</entities>
+			</service_resource>
+		</models>
+		<resources>
+			<service_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</service_write>
+			<service_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</service_read>
+		</resources>
+		<blocks>
+			<agere_service>
+				<class>Agere_Service_Block</class>
+			</agere_service>
+		</blocks>
+		<helpers>
+			<agere_service>
+				<class>Agere_Service_Helper</class>
+			</agere_service>
+		</helpers>
+
+	</global>
+
+
+
+</config>

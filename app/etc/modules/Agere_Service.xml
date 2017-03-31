@@ -1,0 +1,8 @@
+<config>
+	<modules>
+		<Agere_Service>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Agere_Service>
+	</modules>
+</config>

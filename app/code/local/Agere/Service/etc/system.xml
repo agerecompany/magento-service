@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<tabs>
+		<agere_service translate="label" module="agere_service">
+			<label>Service Email</label>
+			<sort_order>1010</sort_order>
+		</agere_service>
+	</tabs>
+
+	<sections>
+
+	</sections>
+</config>
