@@ -16,7 +16,6 @@ var AgereService = {
 	},
 
 	activate: function() {
-		console.log(1111111111);
 		var self = AgereService;
 		self.elm = jQuery(this);
 		var options = jQuery.extend(true, self.fancyOptions, self.elm.data('options').fancybox);
